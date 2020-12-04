@@ -1,0 +1,29 @@
+/*.backimg{
+    background-image: url("../assets/images/back1.png");
+    height:600px;
+    width: 100%;
+   }
+   .capgeminiLogo{
+     height: 50px;
+     width: 150px;
+     float: right;
+     margin-right: 50px;
+     margin-top: 50px;
+   }
+   .bankLogo{  height: 100px;
+     width: 100px;
+     float: left;
+     margin-top: 10px;
+     margin-left: 20px;
+    }*/
+  .bgimg
+{
+	background-image:url("../assets/images/wallet.jpg");
+	height:15cm;
+	background-repeat: no-repeat;
+	background-color: blue;
+}
+a{
+	color:whitesmoke;
+}
+

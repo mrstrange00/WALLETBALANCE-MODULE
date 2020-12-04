@@ -1,0 +1,44 @@
+<style type="text/css">
+    .bgimg {
+        background-image: url("https://media.dash.org/wp-content/uploads/2-phones-crop-color-1.png");
+        min-height: 100vh;
+    }
+</style>
+
+
+<body>
+  <div  class="bgimg">  
+<div class="add-box">
+      <div class="add-header">Enter Account Id</div>
+      <div class="add-body">
+      <form class="form-group" #f1="ngForm"  (ngSubmit)="showBalance(accountId)">
+        <label for="account id"><b>Account ID </b> </label>
+        <input type="text" class="form-control col-sm-4" [(ngModel)]="accountId" name="accountId" required /><br>
+        <input type="submit" class="btn btn-success col-sm-4" value="Submit">
+     </form>
+     </div>
+ </div>
+  <div *ngIf="f1.submitted">
+  <div class="col-md-6 offset-2 mt-6" style="margin-top: 80px;">
+ 
+    <br>
+        <h1>Online Wallet</h1>
+        <hr>
+        <div class="card">
+            <div class="card-body">
+                <h2>Wallet Balance</h2>
+                <hr>
+                <div>
+                    <table style="border: dodgerblue;">
+                        <tr>
+                            <td><b>Wallet Balance:</b></td>
+                            <td>&#x20B9;{{wallet.accountBalance}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+  </div>

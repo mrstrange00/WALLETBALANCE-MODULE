@@ -1,0 +1,159 @@
+<!--
+<style>
+  .add-box
+      {
+        height: 50%;
+        width: 30%;
+        border: 1px solid orchid;
+        margin-left: 35%;
+        margin-top: 10%;
+        position: relative;
+            box-shadow: 21px 12px 24px 10px rgba(0, 0, 0, .5);
+            background: #bababa;
+      }
+      .add-header
+      {
+        text-align: center;
+        font-family: "vardhana",cursive;
+        font-size: 35px;
+        background: linear-gradient(to bottom, #00bfff 0%, #0000ff 100%);
+        color:#fff;
+        position: relative;
+            box-shadow: 1px 3px 14px  rgba(0, 0, 0, .5);
+      }
+      .add-body
+      {
+        padding: 20px;
+        line-height: 2;
+      }
+  </style>
+  
+  
+  <div class="add-box">
+      <div class="add-header">Add Employee</div>
+      <div class="add-body">
+      <form class="form-group" #f1="ngForm" (ngSubmit)="addData()">
+         <label><b>Employee ID </b> </label>
+         <input type="text" class="form-control col-sm-4" [(ngModel)]="id1" name="id1"><br>
+         <label><b>Employee Name</b>   </label>
+         <input type="text" class="form-control col-sm-4" [(ngModel)]="name1" name="name1"><br>
+         <label><b>Employee Salary</b> </label>
+         <input type="text" class="form-control col-sm-4" [(ngModel)]="salary1" name="salary1"><br>
+         <label><b>Employee Department</b>  </label>
+         <input type="text" class="form-control col-sm-4" [(ngModel)]="dept1" name="dept1"><br>
+  
+         <input type="submit" class="btn btn-success col-sm-4" value="Add Employee">
+  
+      </form>
+      </div>
+  </div>
+  <br>
+  <div class="container">
+  <app-child (obj)= "deleteTableRow($event)" [employeeList]="employeeInfo" (obj2)="updateTableRow($event)"> </app-child> 
+  <div class="add-box">
+    <div class="add-header">Update Employee</div>
+    <div class="add-body">
+    <form class="form-group" #f1="ngForm" (ngSubmit)="updateTable()">
+       <label><b>Employee ID </b> </label>
+       <input type="text" class="form-control col-sm-4" [(ngModel)]="uid1" name="uid1"><br>
+       <label><b>Employee Name</b>   </label>
+       <input type="text" class="form-control col-sm-4" [(ngModel)]="uname1" name="uname1"><br>
+       <label><b>Employee Salary</b> </label>
+       <input type="text" class="form-control col-sm-4" [(ngModel)]="usalary1" name="usalary1"><br>
+       <label><b>Employee Department</b>  </label>
+       <input type="text" class="form-control col-sm-4" [(ngModel)]="udept1" name="udept1"><br>
+       <input type="submit" class="btn btn-info" value="Update">
+      </form>
+    </div>
+</div>-->
+<!--
+<HTML>
+  <body>
+    <h2>Router Sample</h2>
+  </body>
+  <div class="nav-link">
+    <a [routerLink]="['/ProductListAll']">Product List All</a>&nbsp;
+    <a [routerLink]="['/ProductList,102']">Product List</a>&nbsp;
+    <a [routerLink]="['/ContactUS']">Contact us</a>
+  </div>
+  <router-outlet></router-outlet>
+</HTML>:
+<h2>Books read from books.json file...</h2>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success col-sm-4" *ngFor="let book1 of booksList">
+    {{book1.id}} {{book1.name}}
+  </li>
+</ul>-->
+<!--
+<body class="backimg">
+  
+  <!-- <img src="../assets/images/background.png"> 
+  <header>
+    <img src="../assets/images/Bank_loo2-removebg-preview.png" class="bankLogo">
+    <img src="../assets/images/loo-removebg-preview.png" class="capgeminiLogo">
+  </header>
+  <body>
+  <div  class="backimg">  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
+        <ul class="navbar-nav">  
+          <li class="nav-item ">  
+            <a routerLink="show-passbook" class="nav-link" class="btn btn-primary active" role="button" >Show Passbook</a>  
+          </li>   
+          <li class="nav-item">  
+            <a  routerLink="update-passbook" class="nav-link" class="btn btn-primary active" role="button" >Update Passbook</a>  
+          </li>   
+          <li class="nav-item">  
+            <a  routerLink="showpassbookbydate" class="nav-link" class="btn btn-primary active" role="button" >Passbook By Date</a>  
+          </li> 
+        </ul>  
+      </nav>     
+        <router-outlet></router-outlet>  
+    </div>  
+  
+  </body>
+-->
+<!--<body style="background-color:honeydew;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="color:teal;text-align: right; margin-right: 1cm;">ONLINE
+        &nbsp;&nbsp;&nbsp;&nbsp;<br> WALLET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        APPLICATION</h1>
+        <br>
+
+    <div style="margin-left: 26.7cm;">
+        <button type="button" class="btn btn-primary">
+            <a routerLink="/show-balance">SHOW BALANCE</a>
+        </button>&nbsp;
+        <button type="button" class="btn btn-primary">
+            <a routerLink="/show-details">SHOW DETAILS</a>
+        </button>
+    </div>
+
+</body>-->
+<body class="bgimg">
+  <header>
+  </header>
+  <body>
+  <div class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav"> 
+      <li class="nav-item ">
+        <h4 style="color:white"><i>Online Wallet</i></h4> 
+      </li> 
+      <li class="nav-item" style="padding-left: 310px;">  
+        <a  routerLink="show-balance" class="nav-link"
+         >SHOW BALANCE</a>  
+      </li>
+      <li class="nav-item " >  
+        <a routerLink="show-details" class="nav-link" 
+         >SHOW DETAILS</a>  
+      </li>    
+    </ul>
+    </div>
+
+        <router-outlet></router-outlet> 
+  
+  </body>
